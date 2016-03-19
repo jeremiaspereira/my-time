@@ -1,0 +1,90 @@
+.header{
+  background:#25ACEB;
+  text-align: center;
+  color:#fff;
+  padding:8px 0;
+}
+
+.main{
+  max-width: 500px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 100px;
+  @media (max-width: 500px){
+    max-width: none;
+    width:95%;
+  }
+}
+
+
+
+.box-principal{
+  background: $background-box-principal;
+}
+
+.cycles{
+
+}
+
+.timer{
+  text-align: right;
+  padding:50px 5px;
+  span{
+    color:#fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.pause{
+
+}
+
+input[type="text"] {
+  width: 50px;
+  padding:5px;
+  text-align: center;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #6B6B6B;
+  font-size: 20px;
+  height: 50px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+
+.btn-group{
+  font-size: 30px;
+  padding:50px 5px;
+
+  i{
+    padding:11px;
+    cursor: pointer;
+    color:#ddd;
+    background: lighten($background-box-principal, 10);
+    border-radius: 4px;
+
+    &:hover{
+      background: lighten($background-box-principal, 5);
+    }
+  }
+
+}
+
+#time{
+  text-align: center;
+  padding-bottom:48px;
+  font-size: 60px;
+  color: #fff;
+}
+
+#progress{
+  height:10px;
+  background:#A3D7DC;
+  width:0;
+}

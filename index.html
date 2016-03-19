@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+	<head>
+		<title>my time | Jeremias Pereira</title>
+		<meta charset="utf-8">
+		<meta property="og:title" content="my time | Jeremias Pereira" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="A simple time for you." />
+		<meta property="og:url" content="http://jeremiaspereira.net" />
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link href="assets/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<section class="main">
+			<div class="header">
+				<div class="row">
+					<div class="grid-12">
+						 my time
+					</div>
+				</div>
+			</div>
+
+			<div class="box-principal">
+				<div class="row">
+					<div class="grid-6">
+						<div class="timer">
+							<input type='text' id='inputHours' value="00" size="2" maxlength="2">
+							<span> : </span>
+							<input type='text' id='inputMinute' value="30" size="2" maxlength="2">
+						</div>
+					</div>
+
+				 	<div class="grid-6">
+						<div class="btn-group">
+							<i class="fa fa-play" id='btnStart'></i>
+							<i class="fa fa-stop" id='btnReset'></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="grid-12">
+	  			  <div id="time"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="grid-12">
+						<div id="progress"></div>
+					</div>
+				</div>
+			</div>
+			<audio id="alarm" src="/assets/song/alarm.mp3" preload="auto"></audio>
+		</section>
+		<script  src="/assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #3F3F3F;
+  background-color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*************************************************************
+// Grids
+**************************************************************/
+[class*="grid-"] {
+  float: left;
+  padding: 0 0%;
+}
+
+.grid-1 {
+  width: 8.33333%;
+}
+
+.grid-2 {
+  width: 16.66667%;
+}
+
+.grid-3 {
+  width: 25%;
+}
+
+.grid-4 {
+  width: 33.33333%;
+}
+
+.grid-5 {
+  width: 41.66667%;
+}
+
+.grid-6 {
+  width: 50%;
+}
+
+.grid-7 {
+  width: 58.33333%;
+}
+
+.grid-8 {
+  width: 66.66667%;
+}
+
+.grid-9 {
+  width: 75%;
+}
+
+.grid-10 {
+  width: 83.33333%;
+}
+
+.grid-11 {
+  width: 91.66667%;
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.header {
+  background: #25ACEB;
+  text-align: center;
+  color: #fff;
+  padding: 8px 0;
+}
+
+.main {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+@media (max-width: 500px) {
+  .main {
+    max-width: none;
+    width: 95%;
+  }
+}
+
+.box-principal {
+  background: #46B19D;
+}
+
+.timer {
+  text-align: right;
+  padding: 50px 5px;
+}
+
+.timer span {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #6B6B6B;
+  font-size: 20px;
+  height: 50px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.btn-group {
+  font-size: 30px;
+  padding: 50px 5px;
+}
+
+.btn-group i {
+  padding: 11px;
+  cursor: pointer;
+  color: #ddd;
+  background: #67c3b2;
+  border-radius: 4px;
+}
+
+.btn-group i:hover {
+  background: #55bca8;
+}
+
+#time {
+  text-align: center;
+  padding-bottom: 48px;
+  font-size: 60px;
+  color: #fff;
+}
+
+#progress {
+  height: 10px;
+  background: #A3D7DC;
+  width: 0;
+}
