@@ -1,15 +1,31 @@
+html{
+    height: 100%;
+    margin: 0;
+    background: -webkit-radial-gradient(ellipse farthest-corner at center top, #ffee75, #ff8930);
+    background: radial-gradient(ellipse farthest-corner at center top, #ffee75, #ff8930);
+    color: #8b9095;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .header{
-  background:#25ACEB;
   text-align: center;
-  color:#fff;
-  padding:8px 0;
+  padding:10px 0;
+  font-weight: 600;
+  border-bottom: solid 1px #ddd;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1c222b;
 }
 
 .main{
-  max-width: 500px;
+  background:#fff;
+  max-width: 450px;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 100px;
+  margin-top: 15% ;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
   @media (max-width: 500px){
     max-width: none;
     width:95%;
@@ -17,27 +33,14 @@
 }
 
 
-
-.box-principal{
-  background: $background-box-principal;
-}
-
-.cycles{
-
-}
-
 .timer{
   text-align: right;
-  padding:50px 5px;
+  padding-top:60px;
   span{
     color:#fff;
     font-size: 30px;
     margin-bottom: 20px;
   }
-}
-
-.pause{
-
 }
 
 input[type="text"] {
@@ -60,31 +63,36 @@ input[type="text"] {
 
 .btn-group{
   font-size: 30px;
-  padding:50px 5px;
+  padding-top:63px;
+  margin-left: 10px;
 
   i{
-    padding:11px;
+    padding:8px;
     cursor: pointer;
-    color:#ddd;
-    background: lighten($background-box-principal, 10);
-    border-radius: 4px;
+    color:#fff;
+    background: lighten(#F16018, 20);
+    margin:0px;
 
     &:hover{
-      background: lighten($background-box-principal, 5);
+      background: lighten(#F16018, 5);
     }
   }
+}
 
+#btnReset{
+  margin-left: -8px;
 }
 
 #time{
   text-align: center;
-  padding-bottom:48px;
+  padding-top:38px;
+  padding-bottom:42px;
   font-size: 60px;
-  color: #fff;
+
 }
 
 #progress{
-  height:10px;
+  height:2px;
   background:#A3D7DC;
   width:0;
 }

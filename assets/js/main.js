@@ -1,16 +1,15 @@
 var isRunning = false;
 var btnStart = document.getElementById("btnStart");
 var btnReset = document.getElementById("btnReset");
+var intervalId;
 
 document.querySelector('#time').textContent = "00:00";
 
 function startTimer(duration, display) {
-  var timer = duration, hours,
-    minutes, seconds;
-
+  var timer = duration, hours, minutes, seconds;
   var bar = 0;
 
-  var si = setInterval(function() {
+  intervalId = setInterval(function() {
     timer = Number(timer);
     hours   = Math.floor(timer / 3600);
     minutes = Math.floor(timer % 3600 / 60);
@@ -22,26 +21,28 @@ function startTimer(duration, display) {
     document.title = "my time | " + hms;
 
     if (--timer < 0) {
+        stopTimer();
         notifyMe();
-        document.querySelector('#time').textContent = "00:00";
-        clearInterval(si);
-        isRunning = false;
-
         document.getElementById('alarm').play();
-
-
     }
 
     if(!isRunning){
-      document.querySelector('#time').textContent = "00:00";
-      clearInterval(si);
-      isRunning = false;
+      stopTimer();
     }
 
     progress(bar++, duration);
 
   }, 1000);
 }
+
+function stopTimer(){
+  clearInterval(intervalId);
+  intervalId = null;
+  isRunning = false;
+  document.querySelector('#time').textContent = "00:00";
+}
+
+
 
 
 btnStart.onclick = function() {
